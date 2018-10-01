@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> Le formulaire </title>
+	<style>
+		body
+		{
+		text-align: center;
+		}
+		fieldset
+		{
+			hight:50%;
+			width: 40%
+			margin: auto;
+			background: #E0FFFF;
+		}
+	</style>
+	</head>
+
+	<body>
+	<form method="post" action="PPE1_v1.php">
+		<fieldset>
+		 <h2>Formulaire d'intervention</h3>
+		 	<p>
+				 <label for="nom">Nom </label><br /> 
+				 <input type="text" name="nom" id="nom" autofocus required />
+		 	</p>
+			<p>
+				 <label for="prenom"> Prenom </label><br />
+				 <input type="text" name="prenom" id="prenom" required />
+			</p>
+		 	 <p>
+		 		<label for="email">Adresse email </label><br />
+		 		<input type="text" name="email" id="email" required  />
+		 	</p>
+				<label for="typeintervention">Type d'intervention</label><br />
+				<select name="typeintervention" id="typeintervention">
+					<option value="Logiciel">Intervention Logiciel</option>
+					<option value="Matiriels">Intervention Matériel</option>
+					<option value="depannage">Dépannage informatique</option>
+					<option value="internet">Problème d'acces internet</option>
+					<option value="autre">Autre</option>				 
+				</select>
+				<br /><br /><br /><br /><br />
+			</p>
+			<p>Description de votre besoin</p>
+			<textarea rows="5" cols="50" placeholder="le texte"></textarea><br/>
+			<input type="submit" value="Envoyer" />
+		  </fieldset>
+	</form>
+	</body>
+</html>
